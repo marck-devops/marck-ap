@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: us-east-1               # <- Change to your AWS region
   ECR_REPOSITORY: marck-app-repo         # <- Change to your ECR repository name
-  IMAGE_TAG: latest                   # <- You can change this to use Git SHA, versioning, etc.
+  IMAGE_TAG: latest                   # <- You can change this to use Git SHA, versioning, etc
 
 jobs:
   build-and-push:
