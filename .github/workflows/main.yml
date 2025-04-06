@@ -31,9 +31,9 @@ jobs:
 
       - name: Unzip project folder
         run: |
-          unzip csnovel-front-main-app.zip
-          mv csnovel-front-main-app/* .   # Move contents to root
-          rm -r csnovel-front-main-app    # Clean up
+          unzip csnovel-front-main.zip
+          mv csnovel-front-main/* .   # Move contents to root
+          rm -r csnovel-front-main    # Clean up
 
       - name: Build, tag, and push Docker image
         env:
