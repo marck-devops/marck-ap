@@ -31,7 +31,7 @@ jobs:
 
       - name: Unzip and move files safely
         run: |
-          unzip csnovel-front-main-app.zip
+          unzip csnovel-front-main.zip
           rsync -a csnovel-front-main/csnovel-front-main/ ./
           rm -rf csnovel-front-main
 
