@@ -29,10 +29,10 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Unzip and move files
+      - name: Unzip and move files safely
         run: |
           unzip csnovel-front-main-app.zip
-          mv csnovel-front-main/csnovel-front-main/* .
+          rsync -a csnovel-front-main/csnovel-front-main/ ./
           rm -rf csnovel-front-main
 
       - name: Build, tag, and push Docker image
